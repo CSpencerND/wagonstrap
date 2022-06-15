@@ -1,5 +1,6 @@
 @use "sass:math";
 @use "../1-abstracts/variables" as *;
+@use "../1-abstracts/breakpoints" as *;
 
 $utilities: (
     "padding": (
@@ -174,22 +175,23 @@ $utilities: (
     // "border-width": (
     //     "prefix": "bw",
     //     "values": (
-    //         
+    //
     //     ),
     // ),
-    "border-radius": (
-        "prefix": "br",
-        "values": (
-            "0": 0,
-            "xs": $base-border-radius,
-            "sm": $base-border-radius * 2,
-            "md": $base-border-radius * 3,
-            "lg": $base-border-radius * 4,
-            "xl": $base-border-radius * 5,
-            "xxl": $base-border-radius * 6,
-            "full": 50%,
+    "border-radius":
+        (
+            "prefix": "br",
+            "values": (
+                "0": 0,
+                "xs": $base-border-radius,
+                "sm": $base-border-radius * 2,
+                "md": $base-border-radius * 3,
+                "lg": $base-border-radius * 4,
+                "xl": $base-border-radius * 5,
+                "xxl": $base-border-radius * 6,
+                "full": 50%,
+            ),
         ),
-    ),
     "display": (
         "prefix": "d",
         "values": (
@@ -198,6 +200,17 @@ $utilities: (
             "flex": flex,
             "inline": inline,
             "inblk": inline-block,
+            "initial": initial,
+        ),
+    ),
+    "position": (
+        "prefix": "pos",
+        "values": (
+            "static": static,
+            "relative": relative,
+            "absolute": absolute,
+            "sticky": sticky,
+            "fixed": fixed,
         ),
     ),
 );
@@ -215,6 +228,38 @@ $utilities: (
         } @else {
             .#{$prefix}-#{$k} {
                 #{$property}: $v;
+            }
+            @if ($prefix == "d") {
+                @include xs {
+                    .#{$prefix}-#{$k}-xs {
+                        #{$property}: $v;
+                    }
+                }
+                @include sm {
+                    .#{$prefix}-#{$k}-sm {
+                        #{$property}: $v;
+                    }
+                }
+                @include md {
+                    .#{$prefix}-#{$k}-md {
+                        #{$property}: $v;
+                    }
+                }
+                @include lg {
+                    .#{$prefix}-#{$k}-lg {
+                        #{$property}: $v;
+                    }
+                }
+                @include xl {
+                    .#{$prefix}-#{$k}-xl {
+                        #{$property}: $v;
+                    }
+                }
+                @include xxl {
+                    .#{$prefix}-#{$k}-xxl {
+                        #{$property}: $v;
+                    }
+                }
             }
         }
     }
