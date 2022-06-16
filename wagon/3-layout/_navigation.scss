@@ -6,6 +6,8 @@
     @extend %flex-between;
     padding-block: $base-padding;
     box-shadow: $base-box-shadow;
+    position: relative;
+    z-index: 9;
 
     .container {
         @extend %flex-between;

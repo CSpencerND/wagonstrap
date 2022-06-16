@@ -713,7 +713,7 @@ select {
 }
 
 .shadow {
-  box-shadow: 1px 3px 5px hsla(0deg, 0%, 0%, 0.5);
+  box-shadow: 2px 3px 10px hsla(0deg, 0%, 0%, 0.5);
 }
 
 .outline {
@@ -722,6 +722,10 @@ select {
 
 .border {
   border: 1px solid hsla(0deg, 0%, 0%, 0.5);
+}
+
+.z-9 {
+  z-index: 9;
 }
 
 .default-font {
@@ -1880,7 +1884,7 @@ select {
 .card {
   display: block;
   padding: 1rem;
-  box-shadow: 1px 3px 5px hsla(0deg, 0%, 0%, 0.5);
+  box-shadow: 2px 3px 10px hsla(0deg, 0%, 0%, 0.5);
 }
 .card .card-title {
   font-size: 16px;
@@ -2143,7 +2147,9 @@ select {
 
 .navbar {
   padding-block: 1rem;
-  box-shadow: 1px 3px 5px hsla(0deg, 0%, 0%, 0.5);
+  box-shadow: 2px 3px 10px hsla(0deg, 0%, 0%, 0.5);
+  position: relative;
+  z-index: 9;
 }
 .navbar .nav-logo {
   font-size: 20px;
