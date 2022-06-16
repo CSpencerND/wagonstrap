@@ -3,12 +3,12 @@
 @use "../1-abstracts/breakpoints" as *;
 
 .navbar {
-    @extend %flex-layout;
+    @extend %flex-between;
     padding-block: $base-padding;
     box-shadow: $base-box-shadow;
 
     .container {
-        @extend %flex-layout;
+        @extend %flex-between;
     }
 
     .nav-logo {

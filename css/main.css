@@ -1869,6 +1869,14 @@ select {
   box-sizing: border-box;
 }
 
+.hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
 .card {
   display: block;
   padding: 1rem;
@@ -2125,6 +2133,12 @@ select {
   bottom: 0;
   transform: rotate(-90deg);
   transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hero {
+  background: no-repeat bottom center;
+  background-size: cover;
+  font-size: 30px;
 }
 
 .navbar {

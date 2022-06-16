@@ -1,4 +1,4 @@
-%flex-layout {
+%flex-between {
     width: 100%;
     display: flex;
     align-items: center;
@@ -6,3 +6,10 @@
     box-sizing: border-box;
 }
 
+%flex-center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}

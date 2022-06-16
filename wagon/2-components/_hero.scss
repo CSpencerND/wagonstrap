@@ -1,0 +1,9 @@
+@use "../1-abstracts/variables" as *;
+@use "../1-abstracts/placeholders" as *;
+
+.hero {
+    @extend %flex-center;
+    background: no-repeat bottom center;
+    background-size: cover;
+    font-size: $fs-3xl;
+}
