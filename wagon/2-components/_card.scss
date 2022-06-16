@@ -7,12 +7,12 @@
     box-shadow: $base-box-shadow;
 
     .card-title {
-        font-size: $base-font-size;
+        font-size: $fs-md;
         padding-bottom: $base-padding;
         font-weight: bold;
     }
 
     .card-body {
-        font-size: $base-font-size;
+        font-size: $fs-md;
     }
 }

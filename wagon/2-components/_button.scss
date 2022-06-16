@@ -1,6 +1,5 @@
 @use "../0-base" as *;
 @use "../1-abstracts/variables" as *;
-@use "../1-abstracts/breakpoints" as *;
 
 .btn {
     text-decoration: none;
@@ -229,19 +228,4 @@
     transform: rotate(-90deg);
     transition: bottom 0.075s ease,
         transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-@include xs {
-    #navToggle + * {
-        display: none;
-    }
-}
-@include md {
-    #navToggle {
-        display: none;
-
-        & + * {
-            display: block;
-        }
-    }
 }

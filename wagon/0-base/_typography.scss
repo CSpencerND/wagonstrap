@@ -7,20 +7,92 @@
 }
 
 .fs-xs {
-    font-size: $base-font-size * 0.5;
+    font-size: $fs-xs;
+    line-height: 1rem;
 }
 .fs-sm {
-    font-size: $base-font-size * 0.75;
+    font-size: $fs-sm;
+    line-height: 1.25rem;
 }
 .fs-md {
-    font-size: $base-font-size;
+    font-size: $fs-md;
+    line-height: 1.5rem;
 }
 .fs-lg {
-    font-size: $base-font-size * 1.5;
+    font-size: $fs-lg;
+    line-height: 1.75rem;
 }
 .fs-xl {
-    font-size: $base-font-size * 2;
+    font-size: $fs-xl;
+    line-height: 1.75rem;
 }
-.fs-xxl {
-    font-size: $base-font-size * 3;
+.fs-2xl {
+    font-size: $fs-2xl;
+    line-height: 2rem;
+}
+.fs-3xl {
+    font-size: $fs-3xl;
+    line-height: 2.25rem;
+}
+.fs-4xl {
+    font-size: $fs-4xl;
+    line-height: 2.5rem;
+}
+.fs-5xl {
+    font-size: $fs-5xl;
+    line-height: 1;
+}
+.fs-6xl {
+    font-size: $fs-6xl;
+    line-height: 1;
+}
+.fs-7xl {
+    font-size: $fs-7xl;
+    line-height: 1;
+}
+.fs-8xl {
+    font-size: $fs-8xl;
+    line-height: 1;
+}
+.fs-9xl {
+    font-size: $fs-9xl;
+    line-height: 1;
+}
+
+.fw-1 {
+    font-weight: 100;
+}
+.fw-2 {
+    font-weight: 200;
+}
+.fw-3 {
+    font-weight: 300;
+}
+.fw-4 {
+    font-weight: 400;
+}
+.fw-5 {
+    font-weight: 500;
+}
+.fw-6 {
+    font-weight: 600;
+}
+.fw-7 {
+    font-weight: 700;
+}
+.fw-8 {
+    font-weight: 800;
+}
+.fw-9 {
+    font-weight: 900;
+}
+
+.fs-italic {
+    font-style: italic;
+}
+.fs-oblique {
+    font-style: oblique;
+}
+.fs-normal {
+    font-style: normal;
 }

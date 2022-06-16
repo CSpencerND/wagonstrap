@@ -1,5 +1,6 @@
 @use "../1-abstracts/variables" as *;
 @use "../1-abstracts/placeholders" as *;
+@use "../1-abstracts/breakpoints" as *;
 
 .navbar {
     @extend %flex-layout;
@@ -11,6 +12,21 @@
     }
 
     .nav-logo {
-        font-size: $fs-lg;
+        font-size: $fs-xl;
+    }
+}
+
+@include xs {
+    #navMenu {
+        display: none;
+    }
+}
+@include md {
+    #navToggle {
+        display: none;
+    }
+    #navMenu {
+        display: flex;
+        gap: 1.5rem;
     }
 }
