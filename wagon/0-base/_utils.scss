@@ -264,3 +264,13 @@ $utilities: (
         }
     }
 }
+
+.shadow {
+    box-shadow: $base-box-shadow;
+}
+.outline {
+    outline:  $base-outline;
+}
+.border {
+    border: $base-border;
+}

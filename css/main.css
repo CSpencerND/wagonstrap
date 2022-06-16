@@ -710,6 +710,18 @@ select {
   position: fixed;
 }
 
+.shadow {
+  box-shadow: 1px 3px 5px hsla(0deg, 0%, 0%, 0.5);
+}
+
+.outline {
+  outline: 1px solid hsla(0deg, 0%, 0%, 0.5);
+}
+
+.border {
+  border: 1px solid hsla(0deg, 0%, 0%, 0.5);
+}
+
 .default-font {
   font-family: Poppins;
 }
@@ -1259,6 +1271,96 @@ select {
   background-color: hsl(0deg, 66%, 26%);
 }
 
+.dark0 {
+  background-color: hsl(231deg, 10%, 13%);
+  color: hsl(31deg, 5%, 77%);
+}
+
+.dark1 {
+  background-color: hsl(231deg, 10%, 17%);
+  color: hsl(31deg, 5%, 84%);
+}
+
+.dark2 {
+  background-color: hsl(231deg, 10%, 22%);
+  color: hsl(31deg, 5%, 91%);
+}
+
+.light0 {
+  background-color: hsl(31deg, 5%, 77%);
+  color: hsl(231deg, 10%, 13%);
+}
+
+.light1 {
+  background-color: hsl(31deg, 5%, 84%);
+  color: hsl(231deg, 10%, 17%);
+}
+
+.light2 {
+  background-color: hsl(31deg, 5%, 91%);
+  color: hsl(231deg, 10%, 22%);
+}
+
+.children-dark0 > * {
+  background-color: hsl(231deg, 10%, 13%);
+  color: hsl(31deg, 5%, 77%);
+}
+
+.children-dark1 > * {
+  background-color: hsl(231deg, 10%, 17%);
+  color: hsl(31deg, 5%, 84%);
+}
+
+.children-dark2 > * {
+  background-color: hsl(231deg, 10%, 22%);
+  color: hsl(31deg, 5%, 91%);
+}
+
+.children-light0 > * {
+  background-color: hsl(31deg, 5%, 77%);
+  color: hsl(231deg, 10%, 13%);
+}
+
+.children-light1 > * {
+  background-color: hsl(31deg, 5%, 84%);
+  color: hsl(231deg, 10%, 17%);
+}
+
+.children-light2 > * {
+  background-color: hsl(31deg, 5%, 91%);
+  color: hsl(231deg, 10%, 22%);
+}
+
+.next-children-dark0 > * > * {
+  background-color: hsl(231deg, 10%, 13%);
+  color: hsl(31deg, 5%, 77%);
+}
+
+.next-children-dark1 > * > * {
+  background-color: hsl(231deg, 10%, 17%);
+  color: hsl(31deg, 5%, 84%);
+}
+
+.next-children-dark2 > * > * {
+  background-color: hsl(231deg, 10%, 22%);
+  color: hsl(31deg, 5%, 91%);
+}
+
+.next-children-light0 > * > * {
+  background-color: hsl(31deg, 5%, 77%);
+  color: hsl(231deg, 10%, 13%);
+}
+
+.next-children-light1 > * > * {
+  background-color: hsl(31deg, 5%, 84%);
+  color: hsl(231deg, 10%, 17%);
+}
+
+.next-children-light2 > * > * {
+  background-color: hsl(31deg, 5%, 91%);
+  color: hsl(231deg, 10%, 22%);
+}
+
 .container {
   width: 100%;
   max-width: 1280px;
@@ -1768,7 +1870,7 @@ select {
 .card {
   display: block;
   padding: 1rem;
-  box-shadow: 1px 3px 5px hsla(0deg, 0%, 0%, 0.1);
+  box-shadow: 1px 3px 5px hsla(0deg, 0%, 0%, 0.5);
 }
 .card .card-title {
   font-size: 16px;
@@ -2025,7 +2127,7 @@ select {
 
 .navbar {
   padding-block: 1rem;
-  box-shadow: 1px 3px 5px hsla(0deg, 0%, 0%, 0.1);
+  box-shadow: 1px 3px 5px hsla(0deg, 0%, 0%, 0.5);
 }
 .navbar .nav-logo {
   font-size: 20px;

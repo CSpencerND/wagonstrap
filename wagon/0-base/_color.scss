@@ -74,3 +74,84 @@ $colors: (
         }
     }
 }
+
+// dark and light shortcuts
+.dark0 {
+    background-color: map-get($colors, "dark0");
+    color: map-get($colors, "light0");
+}
+.dark1 {
+    background-color: map-get($colors, "dark1");
+    color: map-get($colors, "light1");
+}
+.dark2 {
+    background-color: map-get($colors, "dark2");
+    color: map-get($colors, "light2");
+}
+
+.light0 {
+    background-color: map-get($colors, "light0");
+    color: map-get($colors, "dark0");
+}
+.light1 {
+    background-color: map-get($colors, "light1");
+    color: map-get($colors, "dark1");
+}
+.light2 {
+    background-color: map-get($colors, "light2");
+    color: map-get($colors, "dark2");
+}
+
+// select all children
+.children-dark0 > * {
+    background-color: map-get($colors, "dark0");
+    color: map-get($colors, "light0");
+}
+.children-dark1 > * {
+    background-color: map-get($colors, "dark1");
+    color: map-get($colors, "light1");
+}
+.children-dark2 > * {
+    background-color: map-get($colors, "dark2");
+    color: map-get($colors, "light2");
+}
+
+.children-light0 > * {
+    background-color: map-get($colors, "light0");
+    color: map-get($colors, "dark0");
+}
+.children-light1 > * {
+    background-color: map-get($colors, "light1");
+    color: map-get($colors, "dark1");
+}
+.children-light2 > * {
+    background-color: map-get($colors, "light2");
+    color: map-get($colors, "dark2");
+}
+
+// select all childrens children
+.next-children-dark0 > * > * {
+    background-color: map-get($colors, "dark0");
+    color: map-get($colors, "light0");
+}
+.next-children-dark1 > * > * {
+    background-color: map-get($colors, "dark1");
+    color: map-get($colors, "light1");
+}
+.next-children-dark2 > * > * {
+    background-color: map-get($colors, "dark2");
+    color: map-get($colors, "light2");
+}
+
+.next-children-light0 > * > * {
+    background-color: map-get($colors, "light0");
+    color: map-get($colors, "dark0");
+}
+.next-children-light1 > * > * {
+    background-color: map-get($colors, "light1");
+    color: map-get($colors, "dark1");
+}
+.next-children-light2 > * > * {
+    background-color: map-get($colors, "light2");
+    color: map-get($colors, "dark2");
+}
