@@ -2143,6 +2143,7 @@ select {
   background: no-repeat bottom center;
   background-size: cover;
   font-size: 30px;
+  padding-inline: 10vw;
 }
 
 .navbar {
